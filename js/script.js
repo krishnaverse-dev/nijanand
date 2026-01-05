@@ -15,7 +15,7 @@ function shareSite() {
         if (navigator.share) {
             navigator.share({
                 title: 'Krishna Pranami',
-                text: 'Discover the Cosmology of Nijanand Sampraday',
+                text: 'Nijanand Sampraday',
                 url: window.location.href
             }).catch(console.error);
         } else {
@@ -26,8 +26,8 @@ function shareSite() {
     }
 
 function sendEmail() {
-    const subject = encodeURIComponent("संपर्क हेतु संदेश");
-    const body = encodeURIComponent("नमस्ते, मैं आपसे संपर्क करना चाहता हूँ...");
+    const subject = encodeURIComponent("विषय: लिखें");
+    const body = encodeURIComponent("प्रणाम, सुंदरसाथ जी");
     const email = "bramhaatma@gmail.com";
     window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
 }
