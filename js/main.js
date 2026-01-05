@@ -447,12 +447,15 @@ const svg = d3.select("#chart-container")
 
 const g = svg.append("g");
 
-// ZOOM
 const zoom = d3.zoom()
     .scaleExtent([0.1, 4])
+    .filter(function(event) {
+        // Sirf mouse wheel aur drag allow karo, double click ko block karo
+        return !event.type.includes("dblclick");
+    })
     .on("zoom", e => g.attr("transform", e.transform));
 
-svg.call(zoom);
+d3.select("svg").call(zoom);
 
 // TREE
 const tree = d3.tree().nodeSize([45, 280]);
