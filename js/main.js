@@ -3,6 +3,19 @@ function toggleMenu() {
     overlay.classList.toggle('active'); // overlay को show/hide
 }
 
+const node = g.selectAll("circle")
+    .data(nodes)
+    .enter()
+    .append("circle")
+    .attr("r", 10)  // default radius
+    .attr("fill", "steelblue");
+
+node.filter((d, i) => i === 0)
+    .attr("r", 20)
+    .attr("fill", "orange")
+    .attr("stroke", "red")
+    .attr("stroke-width", 2);
+
 const nodeInfo = {
   "अक्षरातीत (पुर्णब्रम्ह)": "सर्वोच्च सत्ता, प्रेम और आनंद के सागर, जो माया और अक्षर ब्रह्म से भी परे हैं।",
   "अक्षरातीत का परमधाम": "अखंड, अविनाशी दिव्य धाम जहाँ श्री राज-श्यामाजी और सखियाँ निवास करती हैं।",
