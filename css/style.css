@@ -243,7 +243,8 @@ article p {
 .nav-close-btn:hover {
     background: var(--highlight);
     color: #0b0d10;
-    transform: scale(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 /* Navigation Links */
@@ -484,7 +485,7 @@ article p {
     display: inline-block; /* block ki jagah inline-block best hai */
     width: 50%;
     padding: 14px;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 600;
     color: var(--highlight);
     background: rgba(56, 189, 248, 0.08);
