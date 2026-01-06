@@ -12,18 +12,20 @@ function toggleMenu() {
 }
 
 function shareSite() {
-        if (navigator.share) {
-            navigator.share({
-                title: 'Krishna Pranami',
-                text: 'Nijanand Sampraday',
-                url: window.location.href
-            }).catch(console.error);
-        } else {
-            navigator.clipboard.writeText(window.location.href)
-                .then(() => alert("Link copied to clipboard!"))
-                .catch(() => alert("Failed to copy link."));
-        }
+    const siteUrl = "https://krishnaverse-dev.github.io/nijanand/";
+
+    if (navigator.share) {
+        navigator.share({
+            title: 'Krishna Pranami',
+            text: 'Nijanand Sampraday',
+            url: siteUrl
+        }).catch(console.error);
+    } else {
+        navigator.clipboard.writeText(siteUrl)
+            .then(() => alert("Link copied to clipboard!"))
+            .catch(() => alert("Failed to copy link."));
     }
+}
 
 function sendEmail() {
     const subject = encodeURIComponent("विषय: लिखें");
