@@ -280,10 +280,7 @@ article p {
     opacity: 0;
     transform: translateY(30px);
     animation: slideFade 0.5s forwards;
-}
-
-.nav-overlay.active .nav-links li {
-    animation-delay: calc(var(--i) * 0.1s); /* stagger effect using CSS variable */
+    animation-delay: calc(var(--i, 0) * 0.1s);
 }
 
 @keyframes slideFade {
@@ -295,7 +292,6 @@ article p {
 
 
 .home-btn {
-    display: none;
     margin: 40px auto;
     width: 48px;
     height: 48px;
@@ -401,8 +397,7 @@ article p {
     max-width: 280px;
     padding: 10px 14px;
     background: rgba(11, 171, 245, 0.8);
-    color: #0b0d10; var(--highlight);
-
+    color: #0b0d10;
     font-size: 13px;
     line-height: 1.4;
     border-radius: 8px;
@@ -449,7 +444,7 @@ article p {
     color: white;
     
     width: 60%;          /* Mobile par full width se thoda kam */
-    padding: o.5px;
+    padding: 0.5px;
     border-radius: 25px;
     box-shadow: 0 20px 50px rgba(0,0,0,0.5);
     
@@ -570,10 +565,34 @@ article p {
     animation: pulse 1.5s infinite;
 }
 
+.ds3-fixed-btn.mantra-btn {
+    left: 170px;               
+}
+
+.icon {
+    width: 22px;
+    height: 22px;
+}
+
+.mantra-btn .icon {
+    animation: mantraPulse 3s infinite ease-in-out;
+}
+
+@keyframes mantraPulse {
+  0%   { transform: scale(1);   opacity: 0.8; }
+  50%  { transform: scale(1.15); opacity: 1; }
+  100% { transform: scale(1);   opacity: 0.8; }
+}
+
+/* Pulse Effect for First Node */
+.pulse-circle {
+    stroke: #ff4500;
+    stroke-width: 4px;
+    fill: none;
+    animation: pulse 1.5s infinite;
+}
+
 @keyframes pulse {
     0% { r: 8; opacity: 1; }
     100% { r: 25; opacity: 0; }
 }
-
-
-
