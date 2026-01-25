@@ -253,7 +253,7 @@ function update3DButton() {
         if(buttonOverlay) buttonOverlay.classList.add("visible");
         
         // Button text in Hindi
-        view3dBtn.innerHTML = `<span>👁️</span> ${currentCenterCard.data.title}3डी `;
+        view3dBtn.innerHTML = `<span>👁️</span> ${currentCenterCard.data.title} 3डी `;
     } else {
         view3dBtn.classList.remove("visible");
         if(buttonOverlay) buttonOverlay.classList.remove("visible");
