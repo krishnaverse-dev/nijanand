@@ -36,37 +36,37 @@ function sendEmail() {
                 has3D: true
             },
             {
-                img: 'thumbnail/photon.gif',
+                img: 'thumbnail/Photon.gif',
                 title: 'Photon',
                 embed: 'https://sketchfab.com/3d-models/photon-497fa804431044b5aa9cc8e0b69b05f5/embed?autostart=0&ui_controls=1&ui_infos=0',
                 has3D: true
             },
             {
-                img: 'thumbnail/graviton.gif',
+                img: 'thumbnail/Graviton.gif',
                 title: 'Graviton',
                 embed: 'https://sketchfab.com/3d-models/graviton-q-2cb2ecb50ede4b2fbafc5ab8f31845d1/embed?autostart=0&ui_controls=1&ui_infos=0',
                 has3D: true
             },
             {
-                img: 'thumbnail/atom.gif',
+                img: 'thumbnail/Atom.gif',
                 title: 'Atom',
                 embed: 'https://sketchfab.com/3d-models/atom-6459713775904be79643635ce0bc1713/embed?autostart=0&ui_controls=1&ui_infos=0',
                 has3D: true
             },
             {
-                img: 'thumbnail/molecule.gif',
+                img: 'thumbnail/Molecule.gif',
                 title: 'Molecule',
                 embed: 'https://sketchfab.com/3d-models/diamond-molecule-structure-f4e8761bf64f488095ee57f2cb5698c4/embed?autostart=0&ui_controls=1&ui_infos=0',
                 has3D: true
             },
              {
-                img: 'thumbnail/asteroid.gif',
+                img: 'thumbnail/Asteroid.gif',
                 title: 'Asteroid',
                 embed: 'https://sketchfab.com/3d-models/asteroid-80a70567fb2a42df836e6d70204e0b68/embed?autostart=0&ui_controls=1&ui_infos=0',
                 has3D: true
             },
              {
-                img: 'thumbnail/comet.gif',
+                img: 'thumbnail/Comet.gif',
                 title: 'Comet',
                 embed: 'https://sketchfab.com/3d-models/parts-of-a-comet-fc0f8e88db8b46b286c223c1f5b578a0/embed?autostart=0&ui_controls=1&ui_infos=0',
                 has3D: true
@@ -78,7 +78,7 @@ function sendEmail() {
                 has3D: true
             },
              {
-                img: 'thumbnail/star.gif',
+                img: 'thumbnail/Star.gif',
                 title: 'Star',
                 embed: 'https://sketchfab.com/3d-models/sun-9ef1c68fbb944147bcfcc891d3912645/embed?autostart=0&ui_controls=1&ui_infos=0',
                 has3D: true
@@ -416,3 +416,4 @@ function sendEmail() {
             document.getElementById("view3dBtn").classList.remove("visible");
             document.getElementById("buttonOverlay").classList.remove("visible");
         });
+
