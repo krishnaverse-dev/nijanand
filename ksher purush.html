@@ -25,6 +25,7 @@
       height: 100%;
       object-fit: cover;
       z-index: -1;
+      pointer-events: none;
     }
         /* 3D BUTTON STYLES - You can customize this in your CSS file */
         .view-3d-btn {
@@ -153,9 +154,6 @@
 </head>
 
 <body>
-<video class="bg-video" autoplay muted loop playsinline>
-  <source src="thumbnail/f7cc0cb03af6787737e815d60a7cfc51.mp4" type="video/mp4">
-</video>
     <!-- ===== HEADER ===== -->
     <header>
         <div class="header-content">
@@ -186,6 +184,9 @@
             <li><a href="share.html" onclick="toggleMenu()">साझा करें</a></li>
         </ul>
     </div>
+<video class="bg-video" autoplay muted loop playsinline>
+    <source src="thumbnail/f7cc0cb03af6787737e815d60a7cfc51.mp4" type="video/mp4">
+  </video>
 
     <!-- ===== PREMIUM FEED OVERLAY ===== -->
     <div id="overlay">
