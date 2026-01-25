@@ -370,7 +370,7 @@ function sendEmail() {
                 buttonOverlay.classList.add("visible");
                 
                 // Update button text with card title
-                view3dBtn.innerHTML = `<span>👁️</span> View ${currentCenterCard.data.title} in 3D`;
+                view3dBtn.innerHTML = `<span>👁️</span>${currentCenterCard.data.title}3D`;
             } else {
                 // No 3D model, hide button
                 view3dBtn.classList.remove("visible");
