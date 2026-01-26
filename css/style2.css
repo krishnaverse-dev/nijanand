@@ -9,25 +9,29 @@
     --backdrop-blur: blur(10px);
 }
 
-/* Scrollbar ko poori duniya se hide karne ke liye */
 * { 
     box-sizing: border-box; 
     margin: 0; 
     padding: 0; 
     font-family: 'Inter', system-ui, sans-serif; 
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE/Edge */
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
 }
-
-html, body {
-    height: 100%;
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    overflow: hidden; /* Body ko lock kiya taki double scroll na ho */
-    background-color: var(--bg-color);
-    color: rgba(255,255,255,0.85);
+    height: 100%;
+    object-fit: cover;      
+    z-index: -1;            
+    pointer-events: none; 
+}
+body {
+    margin: 0;
+    background: transparent;
 }
 
-/* 2. Fixed Header Section */
 header {
     position: fixed; 
     top: 0; 
@@ -96,7 +100,6 @@ header {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
-/* 6. Navigation Overlay */
 .nav-overlay {
     position: fixed;
     top: 0;
@@ -155,7 +158,6 @@ header {
     box-shadow: 0 0 25px #38bdf8;
     transform: translateY(-3px);
 }
-/* 3D BUTTON STYLES - You can customize this in your CSS file */
         .view-3d-btn {
             position: fixed;
             bottom: 30px;
@@ -199,8 +201,6 @@ header {
         .view-3d-btn i {
             font-size: 20px;
         }
-        
-        /* Overlay for button background */
         .button-overlay {
             position: fixed;
             bottom: 0;
@@ -218,7 +218,6 @@ header {
             opacity: 1;
         }
         
-        /* Close button for embed */
         #closeBtn {
             position: fixed;
             top: 20px;
@@ -242,7 +241,6 @@ header {
             transform: scale(1.1);
         }
         
-        /* Embed container */
         #embedBox {
             position: fixed;
             top: 0;
@@ -259,8 +257,6 @@ header {
             height: 100%;
             border: none;
         }
-        
-        /* Hint text */
         .hint {
             position: fixed;
             top: 50%;
