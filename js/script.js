@@ -243,7 +243,7 @@ function updateSpiral() {
     }
 }
 
-/* ================= UPDATE HINDI 3D BUTTON ================= */
+/* ================= UPDATE 3D BUTTON ================= */
 function update3DButton() {
     const view3dBtn = document.getElementById("view3dBtn");
     const buttonOverlay = document.getElementById("buttonOverlay");
@@ -253,7 +253,7 @@ function update3DButton() {
         if(buttonOverlay) buttonOverlay.classList.add("visible");
         
         // Button text in Hindi
-        view3dBtn.innerHTML = `<span>👁️</span> ${currentCenterCard.data.title} 3डी `;
+        view3dBtn.innerHTML = `<span>👁️</span> ${currentCenterCard.data.title} देखें`;
     } else {
         view3dBtn.classList.remove("visible");
         if(buttonOverlay) buttonOverlay.classList.remove("visible");
