@@ -158,7 +158,37 @@ header {
     box-shadow: 0 0 25px #38bdf8;
     transform: translateY(-3px);
 }
-        .view-3d-btn {
+
+.btn-transparent {
+    display: inline-block; /* block ki jagah inline-block best hai */
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--highlight);
+    background: rgba(56, 189, 248, 0.08);
+    border: 2px solid var(--highlight);
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none; /* Underline hatayega */
+    transition: all 0.2s ease;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.btn-transparent:hover {
+    background: #38bdf8;
+    color: #0b0d10;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.btn-transparent:active {
+    transform: scale(0.97);
+    background: var(--highlight);
+    color: #000;
+}
+
+
+.view-3d-btn {
             position: fixed;
             bottom: 30px;
             left: 50%;
