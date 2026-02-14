@@ -664,8 +664,7 @@ function closeTutorial() {
     // पल्स एनीमेशन हटाएं
     d3.selectAll(".pulse-circle").remove();
 }
-
-// सब कुछ लोड होने के 1 सेकंड बाद ट्यूटोरियल शुरू करें
+
 window.onload = () => {
     setTimeout(startOnboarding, 1000);
 };
